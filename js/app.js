@@ -61,8 +61,10 @@ const makeMiddleEarth = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 1 complete - Made Middle Earth".
 
+
+
 // ============
-// Chapter 2
+// SECTION Chapter 2
 // ============
 const makeHobbits = () => {
   console.log("Chapter 2 - make Hobbits.");
@@ -85,12 +87,18 @@ const makeHobbits = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 2 complete - Made the Hobbits".
 
+
+
 // ============
-// Chapter 3
+// SECTION Chapter 3
 // ============
 const keepItSecretKeepItSafe = () => {
+
+  let theRing = $("<div></div>").attr("id", "the-ring");
   // 1. create an empty div with an id of 'the-ring'
   // 2. add the ring as a child of Frodo
+
+  $(theRing).appendTo( $('.hobbit').eq(0) );
   // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
   // when you think you have given Frodo the ring, check in your Elements tab
 };
@@ -98,8 +106,10 @@ const keepItSecretKeepItSafe = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 3 complete - Made the ring and gave it to Frodo".
 
+
+
 // ============
-// Chapter 4
+// SECTION Chapter 4
 // ============
 const makeBaddies = () => {
   // 1. display an unordered list of baddies in Mordor
@@ -110,8 +120,10 @@ const makeBaddies = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 4 complete - Made the Baddies"..
 
+
+
 // ============
-// Chapter 5
+// SECTION Chapter 5
 // ============
 const makeBuddies = () => {
   // 1. create an aside tag and append it to middle-earth below mordor
@@ -122,8 +134,10 @@ const makeBuddies = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 5 complete - Made the Buddies".
 
+
+
 // ============
-// Chapter 6
+// SECTION Chapter 6
 // ============
 const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
@@ -133,8 +147,10 @@ const leaveTheShire = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 6 complete - Left the Shire"
 
+
+
 // ============
-// Chapter 7
+// SECTION Chapter 7
 // ============
 const beautifulStranger = () => {
   // 1. change the buddy 'Strider' textnode to "Aragorn"
@@ -144,8 +160,10 @@ const beautifulStranger = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 7 complete - Strider is changed to Aragorn"
 
+
+
 // ============
-// Chapter 8
+// SECTION Chapter 8
 // ============
 const forgeTheFellowShip = () => {
   // 1. create a new div with an id 'the-fellowship'
@@ -157,8 +175,10 @@ const forgeTheFellowShip = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 8 complete - The Fellowship is created"
 
+
+
 // ============
-// Chapter 9
+// SECTION Chapter 9
 // ============
 const theBalrog = () => {
   // 1. change the 'Gandalf' textNode to 'Gandalf the White'
@@ -169,8 +189,10 @@ const theBalrog = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 9 complete - Updated Gandalf"
 
+
+
 // ============
-// Chapter 10
+// SECTION Chapter 10
 // ============
 const hornOfGondor = () => {
   // 1. create a pop-up alert that the horn of gondor has been blown
@@ -181,8 +203,10 @@ const hornOfGondor = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 10 complete - horn of gandor blew and Boromir is dead"
 
+
+
 // ============
-// Chapter 11
+// SECTION Chapter 11
 // ============
 const itsDangerousToGoAlone = () => {
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
@@ -192,8 +216,10 @@ const itsDangerousToGoAlone = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 11 complete - Sam and Frodo are in Mordor and Mount Doom has been created"
 
+
+
 // ============
-// Chapter 12
+// SECTION Chapter 12
 // ============
 const weWantsIt = () => {
   // 1. Create a div with an id of 'gollum' and add it to Mordor
@@ -204,8 +230,10 @@ const weWantsIt = () => {
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 12 complete - Gollum is trying to get the ring".
 
+
+
 // ============
-// Chapter 13
+// SECTION Chapter 13
 // ============
 const thereAndBackAgain = () => {
   // 1. remove Gollum and the Ring from the DOM
