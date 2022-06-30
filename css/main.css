@@ -169,6 +169,10 @@ aside ul {
   border: solid grey 3px;
 }
 
+.dead {
+  text-decoration: line-through;
+}
+
 /*===========================================================*/
 /* Responsive Layout Keeps Locales Correctly Oriented on Map */
 /*===========================================================*/

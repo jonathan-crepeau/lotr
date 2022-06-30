@@ -181,10 +181,10 @@ const beautifulStranger = () => {
 // ============
 const forgeTheFellowShip = () => {
   console.log("Chapter 8 - The Fellowship is created.");
-  $("<div id='the-fellowship'></aside>").html("<h1>The Fellowship</h1>").appendTo("#middle-earth");
+  $("<div id='the-fellowship'></aside>").html("<h1>The Fellowship</h1>\n<ul></ul>").appendTo("#middle-earth");
 
-  $("#Rivendell ul").appendTo("#the-fellowship");
-  $("aside ul").appendTo("#the-fellowship");
+  $("#Rivendell ul li").appendTo("#the-fellowship ul");
+  $("aside ul li").appendTo("#the-fellowship ul");
   // 1. create a new div with an id 'the-fellowship'
   // 2. add an h1 with the text 'The Fellowship' to this new div
   // 3. append the fellowship to middle-earth
@@ -216,6 +216,10 @@ const theBalrog = () => {
 // SECTION Chapter 10
 // ============
 const hornOfGondor = () => {
+  console.log('Chapter 10 - Horn of Gondor has been blown!!');
+  $('#the-fellowship ul li').eq(8).attr('class', 'dead');
+  $('#Mordor ul li').eq(3).remove();
+  // $(buddyList).eq(4).attr("class", "dead");
   // 1. create a pop-up alert that the horn of gondor has been blown
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
