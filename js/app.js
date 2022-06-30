@@ -1,8 +1,8 @@
-console.log("LOTR homework js file is connected");
-console.log(
-  "HINT: Click on the 'Elements' tab to see the elements that you are creating"
-);
-console.log("---------------");
+// console.log("LOTR homework js file is connected");
+// console.log(
+//   "HINT: Click on the 'Elements' tab to see the elements that you are creating"
+// );
+// console.log("---------------");
 // ==============================
 //       Dramatis Personae
 // ==============================
@@ -30,13 +30,26 @@ const lands = ["The-Shire", "Rivendell", "Mordor"];
 const makeMiddleEarth = () => {
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
 
-  console.log("Trying to make middle earth.");
+  console.log("Chapter 1");
 
   // 1. create a section tag with an id of middle-earth
 
+  let sectionOne = $("<section id='middle-earth'></section>");
+
   // 2. append the section to the body of the DOM.
 
+  $(sectionOne).appendTo('body');
+  // NOTE - Remember, to store references, you want to place the selected elementsrelative to another element. The above returns a jQuery object containing "sectionOne". To use $('body').append(sectionOne) returns the jQuery body object.
+
   // 3. use a for loop to iterate over the lands array that does the following:
+
+  for (let a = 0; a < lands.length; a++) {
+    // console.log(lands[a]);
+    let article = $("<article></article>");
+    $(article).attr("id", lands[a]);
+    $("<h1></h1>").html(lands[a]).prependTo(article);
+    $(article).appendTo("#middle-earth");
+  }
 
   //   3a. creates an article tag (there should be one for each land when the loop is done)
 
