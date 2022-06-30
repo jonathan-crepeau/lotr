@@ -180,6 +180,11 @@ const beautifulStranger = () => {
 // SECTION Chapter 8
 // ============
 const forgeTheFellowShip = () => {
+  console.log("Chapter 8 - The Fellowship is created.");
+  $("<div id='the-fellowship'></aside>").html("<h1>The Fellowship</h1>").appendTo("#middle-earth");
+
+  $("#Rivendell ul").appendTo("#the-fellowship");
+  $("aside ul").appendTo("#the-fellowship");
   // 1. create a new div with an id 'the-fellowship'
   // 2. add an h1 with the text 'The Fellowship' to this new div
   // 3. append the fellowship to middle-earth
