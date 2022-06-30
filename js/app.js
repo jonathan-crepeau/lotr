@@ -93,7 +93,7 @@ const makeHobbits = () => {
 // SECTION Chapter 3
 // ============
 const keepItSecretKeepItSafe = () => {
-
+  console.log("Chapter 3 - Keep it Secret.")
   let theRing = $("<div></div>").attr("id", "the-ring");
   // 1. create an empty div with an id of 'the-ring'
   // 2. add the ring as a child of Frodo
@@ -112,7 +112,7 @@ const keepItSecretKeepItSafe = () => {
 // SECTION Chapter 4
 // ============
 const makeBaddies = () => {
-
+  console.log("Chapter 4 - Made the Baddies.");
   $("<ul></ul>").appendTo("#Mordor");
   for (let a = 0; a < baddies.length; a++) {
     $("<li></li>").attr("class", "baddy").html(baddies[a]).appendTo("#Mordor ul");
@@ -131,6 +131,11 @@ const makeBaddies = () => {
 // SECTION Chapter 5
 // ============
 const makeBuddies = () => {
+  console.log("Chapter 5 - Made the Buddies");
+  $("<aside></aside>").html("<ul></ul>").appendTo("#middle-earth");
+  for (let a = 0; a < buddies.length; a++) {
+    $("<li></li>").attr("class", "buddy").html(buddies[a]).appendTo( $("aside ul"));
+  }
   // 1. create an aside tag and append it to middle-earth below mordor
   // 2. display an unordered list of buddies in the aside
   // 3. give each of the buddies a class of "buddy"
