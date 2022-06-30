@@ -30,7 +30,7 @@ const lands = ["The-Shire", "Rivendell", "Mordor"];
 const makeMiddleEarth = () => {
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
 
-  console.log("Chapter 1");
+  console.log("Chapter 1 - make Middle Earth");
 
   // 1. create a section tag with an id of middle-earth
 
@@ -44,9 +44,7 @@ const makeMiddleEarth = () => {
   // 3. use a for loop to iterate over the lands array that does the following:
 
   for (let a = 0; a < lands.length; a++) {
-    // console.log(lands[a]);
-    let article = $("<article></article>");
-    $(article).attr("id", lands[a]);
+    let article = $("<article></article>").attr("id", lands[a]);
     $("<h1></h1>").html(lands[a]).prependTo(article);
     $(article).appendTo("#middle-earth");
   }
@@ -67,13 +65,19 @@ const makeMiddleEarth = () => {
 // Chapter 2
 // ============
 const makeHobbits = () => {
-  console.log("Make hobbits");
+  console.log("Chapter 2 - make Hobbits.");
 
   // 1. display an unordered list of the hobbits in the shire.
+  $('<ul></ul>').appendTo('#The-Shire');
 
   // 2. give each hobbit a class of "hobbit"
 
   // hint: create a 'ul' outside the loop upon which to append the 'li's
+
+  for (let a = 0; a < hobbits.length; a++) {
+    let listItem = $("<li></li>").html(hobbits[a]).attr('class', 'hobbit');
+    $(listItem).appendTo("#The-Shire ul");
+  }
 
   // hint: get 'The-Shire' by using its id
 };
