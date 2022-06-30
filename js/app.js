@@ -150,6 +150,7 @@ const makeBuddies = () => {
 // SECTION Chapter 6
 // ============
 const leaveTheShire = () => {
+  console.log('Chapter 6 - Left The Shire.')
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
   // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
   $("#The-Shire ul").appendTo("#Rivendell");
@@ -164,6 +165,8 @@ const leaveTheShire = () => {
 // SECTION Chapter 7
 // ============
 const beautifulStranger = () => {
+  console.log('Chapter 7 - Name Change.')
+  $('.buddy').eq(3).html("Aragorn");
   // 1. change the buddy 'Strider' textnode to "Aragorn"
   // hint: You can get a list of elements by tag name, such as 'aside'
 };
