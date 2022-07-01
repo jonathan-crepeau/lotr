@@ -236,7 +236,7 @@ const hornOfGondor = () => {
 const itsDangerousToGoAlone = () => {
   console.log("Chapter 11 - Frodo & Sam.");
   $("#the-fellowship ul li.hobbit").eq(0).appendTo("#Mordor ul");
-  $("#the-fellowship ul li.hobbit").eq(1).appendTo("#Mordor ul");
+  $("#the-fellowship ul li.hobbit").eq(0).appendTo("#Mordor ul");
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
   // 2. add a div with an id of 'mount-doom' to Mordor
   $("<div></div>").attr("id", "mount-doom").insertAfter("#Mordor h1");
@@ -269,6 +269,11 @@ const weWantsIt = () => {
 // SECTION Chapter 13
 // ============
 const thereAndBackAgain = () => {
+  console.log('Chapter 13 - There And Back Again.');
+  $('#gollum').remove();
+  $("#Mordor li.baddy").remove();
+  $("#Mordor li").appendTo('#The-Shire');
+  $("#the-fellowship ul li.hobbit").appendTo("#The-Shire");
   // 1. remove Gollum and the Ring from the DOM
   // 2. remove all the baddies from the DOM
   // 3. Move all the hobbits back to the shire
