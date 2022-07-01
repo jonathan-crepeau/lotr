@@ -235,11 +235,11 @@ const hornOfGondor = () => {
 // ============
 const itsDangerousToGoAlone = () => {
   console.log("Chapter 11 - Frodo & Sam.");
-  $("#the-fellowship ul li.hobbit").eq(0).appendTo("#Mordor");
-  $("#the-fellowship ul li.hobbit").eq(1).appendTo("#Mordor");
+  $("#the-fellowship ul li.hobbit").eq(0).appendTo("#Mordor ul");
+  $("#the-fellowship ul li.hobbit").eq(1).appendTo("#Mordor ul");
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
   // 2. add a div with an id of 'mount-doom' to Mordor
-  $("<div></div>").attr("id", "mount-doom").appendTo("#Mordor");
+  $("<div></div>").attr("id", "mount-doom").insertAfter("#Mordor h1");
 };
 
 // COMMIT YOUR WORK
@@ -251,6 +251,10 @@ const itsDangerousToGoAlone = () => {
 // SECTION Chapter 12
 // ============
 const weWantsIt = () => {
+  console.log("Chapter 12 - Gollum Attacks");
+  $("<div id='gollum'></div>").insertAfter('#Mordor h1');
+  $('#the-ring').appendTo('#gollum');
+  $('#gollum').appendTo("#mount-doom");
   // 1. Create a div with an id of 'gollum' and add it to Mordor
   // 2. Move the ring from Frodo and give it to Gollum
   // 3. Move Gollum into Mount Doom
